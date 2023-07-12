@@ -3,10 +3,9 @@ import ContentLoader from 'react-content-loader';
 
 type SkeletonProps = {
   className: string;
-  key: number;
 };
 
-const Skeleton: React.FC<SkeletonProps> = ({ className, key }) => (
+const Skeleton: React.FC<SkeletonProps> = (props) => (
   <ContentLoader
     speed={2}
     width={240}
@@ -14,8 +13,7 @@ const Skeleton: React.FC<SkeletonProps> = ({ className, key }) => (
     viewBox='0 0 280 460'
     backgroundColor='#f3f3f3'
     foregroundColor='#ecebeb'
-    className={className}
-    key={key}
+    {...props}
   >
     <circle cx='128' cy='129' r='128' />
     <rect x='59' y='265' rx='10' ry='10' width='141' height='30' />
