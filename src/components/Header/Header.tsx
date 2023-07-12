@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Search from 'components/Search/Search';
-import { ReactComponent as CartSvg } from '/public/img/cart.svg';
+import { ReactComponent as CartSvg } from 'img/cart.svg';
 
 import { useAppSelector } from 'hooks/redux';
 import { selectCartTotalItems, selectCartTotalSum } from 'store/cart/selectors';
@@ -18,7 +18,7 @@ const Header: React.FC = () => {
           <img
             className='logo__img'
             width='38'
-            src='./img/pizza-logo.svg'
+            src='/src/img/pizza-logo.svg'
             alt='Pizza logo'
           />
           <div>

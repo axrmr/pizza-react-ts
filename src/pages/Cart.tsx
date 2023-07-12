@@ -3,9 +3,9 @@ import React from 'react';
 import { Toaster } from 'react-hot-toast';
 import { Link } from 'react-router-dom';
 
-import { ReactComponent as CartSvg } from '/public/img/cart.svg';
-import { ReactComponent as ArrowLeftSvg } from '/public/img/grey-arrow-left.svg';
-import { ReactComponent as TrashSvg } from '/public/img/trash.svg';
+import { ReactComponent as CartSvg } from 'img/cart.svg';
+import { ReactComponent as ArrowLeftSvg } from 'img/grey-arrow-left.svg';
+import { ReactComponent as TrashSvg } from 'img/trash.svg';
 
 import CartItem from 'components/CartItem/CartItem';
 import EmptyCart from 'components/EmptyCart/EmptyCart';

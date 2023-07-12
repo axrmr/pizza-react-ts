@@ -15,6 +15,7 @@ export default defineConfig({
       consts: '/src/consts',
       store: '/src/store',
       hooks: '/src/hooks',
+      img: '/src/img',
     },
   },
   server: {

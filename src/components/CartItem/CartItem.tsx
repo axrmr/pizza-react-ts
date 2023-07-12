@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { ReactComponent as MinusSvg } from '/public/img/minus.svg';
-import { ReactComponent as PlusSvg } from '/public/img/plus.svg';
+import { ReactComponent as MinusSvg } from 'img/minus.svg';
+import { ReactComponent as PlusSvg } from 'img/plus.svg';
 
 import { PIZZA_TYPES } from 'consts';
 import { useAppDispatch } from 'hooks/redux';

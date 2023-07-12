@@ -4,7 +4,7 @@ import { PIZZA_TYPES } from 'consts';
 import { useAppDispatch, useAppSelector } from 'hooks/redux';
 import { addPizza } from 'store/cart/cartSlice';
 import { selectCartItems } from 'store/cart/selectors';
-import { ReactComponent as PlusSvg } from '/public/img/plus.svg';
+import { ReactComponent as PlusSvg } from 'img/plus.svg';
 
 type PizzaItemProps = {
   sizes: number[];
