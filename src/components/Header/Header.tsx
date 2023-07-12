@@ -19,7 +19,7 @@ const Header: React.FC = () => {
           <img
             className='logo__img'
             width='38'
-            src='src/img/pizza-logo.svg'
+            src='/src/img/pizza-logo.svg'
             alt='Pizza logo'
           />
           <div>
