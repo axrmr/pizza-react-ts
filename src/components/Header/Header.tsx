@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Search from 'components/Search/Search';
 
 import { ReactComponent as CartSvg } from 'img/cart.svg';
+import { ReactComponent as LogoSvg } from 'img/pizza-logo.svg';
 
 import { useAppSelector } from 'hooks/redux';
 import { selectCartTotalItems, selectCartTotalSum } from 'store/cart/selectors';
@@ -16,12 +17,7 @@ const Header: React.FC = () => {
     <header className='header'>
       <div className='container'>
         <Link to='/' className='logo'>
-          <img
-            className='logo__img'
-            width='38'
-            src='src/img/pizza-logo.svg'
-            alt='Pizza logo'
-          />
+          <LogoSvg width='38' className='logo__img' />
           <div>
             <h1 className='logo__title'>Mamma-Mia!</h1>
             <p className='logo__aftertitle'>самая вкусная пицца во вселенной</p>
