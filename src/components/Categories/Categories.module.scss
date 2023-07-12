@@ -1,0 +1,43 @@
+@use '../../scss/variables';
+@use '../../scss/mixins';
+
+.categoriesWrapper {
+  max-width: 1440px;
+  overflow: auto;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
+}
+
+.list {
+  display: flex;
+  gap: 10px;
+
+  @media (min-width: 1024px) and (max-width: 1439px) {
+    justify-content: center;
+  }
+}
+
+.item {
+  background-color: #f9f9f9;
+  padding: 13px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.1s ease-in-out;
+  @include mixins.noselect;
+
+  &:hover {
+    background-color: darken(#f9f9f9, 2%);
+  }
+
+  &:active {
+    background-color: darken(#f9f9f9, 5%);
+  }
+
+  &.active {
+    background-color: #282828;
+    color: #fff;
+  }
+}

@@ -1,0 +1,43 @@
+@import '../../scss/variables';
+@import '../../scss/mixins';
+
+.wrapper {
+  text-align: center;
+  padding: 80px 0 120px;
+
+  .icon {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 64px;
+  }
+
+  .title {
+    margin: 0 0 15px;
+    font-size: 40px;
+    font-weight: 800;
+  }
+
+  .descr {
+    margin: 0 0 40px;
+    font-size: 20px;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 180px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 1.5;
+    border: 1px solid black;
+    border-radius: 20px;
+    transition: background-color 0.1s ease, color 0.1s ease;
+
+    &:hover {
+      color: #fff;
+      background-color: black;
+    }
+  }
+}
