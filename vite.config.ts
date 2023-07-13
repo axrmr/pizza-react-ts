@@ -16,6 +16,7 @@ export default defineConfig({
       store: '/src/store',
       hooks: '/src/hooks',
       img: '/src/img',
+      ui: '/src/components/ui',
     },
   },
   server: {

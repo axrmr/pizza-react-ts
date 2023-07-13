@@ -5,9 +5,9 @@ import './App.css';
 import './scss/app.scss';
 
 import SharedLayout from 'components/SharedLayout/SharedLayout';
+import Cart from 'pages/Cart';
 import Home from 'pages/Home';
 
-const Cart = React.lazy(() => import('pages/Cart'));
 const ErrorPage = React.lazy(() => import('pages/ErrorPage'));
 
 const App: React.FC = () => {
